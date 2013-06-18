@@ -1,4 +1,5 @@
 CvBe::Application.routes.draw do
+  root to: "cms/pages#index"
   namespace :cms do
     root to: "pages#index"
     resources :base

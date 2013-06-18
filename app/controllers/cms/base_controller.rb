@@ -1,5 +1,5 @@
 class Cms::BaseController < ApplicationController
-
+  respond_to :html, :json
   layout "cms"
 
   before_filter :default_attributes 

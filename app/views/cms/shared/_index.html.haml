@@ -7,7 +7,7 @@
         %tr
           - @model.attribute_names[0..4].each do |attr|
             %td
-              = print_attribute i, attr
+              = print_attribute i, attr.html_safe
               
              
           %td.actions

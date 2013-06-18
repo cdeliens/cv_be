@@ -25,7 +25,6 @@ module ApplicationHelper
           form_build << (form.input attr[:name], as: attr[:as], label: attr[:name].capitalize)
         elsif attr[:class]
           form_build << (form.input attr[:name], label: attr[:name].capitalize, html_input: {class: attr[:class]}, as: attr[:as])
-          
         else
           form_build << (form.input attr[:name], label: attr[:name].capitalize )
         end
@@ -48,9 +47,8 @@ module ApplicationHelper
 
   def print_attribute(instance, attribute)
     begin
-      if (attribute.scan(/_id/).present?)
-        model = attribute.first(attribute.length - 3)
-        model
+      if is_nested_attribute? attribute
+        instance.send(attribute[0..-4]).name
       else
         instance.send(attribute)
       end
