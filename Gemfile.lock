@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:newfuturodev/bootstrap-sass.git
+  remote: git@github.com:cdeliens/bootstrap-sass.git
   revision: 8ca5753b6793437b76a46400f34ebba9ff0a00b9
   branch: latest
   specs:
