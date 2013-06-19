@@ -6,7 +6,7 @@
 development:
   adapter: mysql2
   database: db/development.cv_be1
-  pool:5
+  pool: 5
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
