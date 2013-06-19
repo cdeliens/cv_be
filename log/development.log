@@ -16967,3 +16967,4 @@ Served asset /embarcaderomvb-reg-webfont.woff - 304 Not Modified (0ms)
 
 Started GET "/assets/embarcaderomvb-bold-webfont.woff" for 127.0.0.1 at 2013-06-18 16:44:29 -0600
 Served asset /embarcaderomvb-bold-webfont.woff - 304 Not Modified (0ms)
+Connecting to database specified by database.yml

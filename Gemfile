@@ -2,8 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
-gem 'pg'
-gem 'thin'
+group :development, :test do
+  gem 'mysql2'
+end
+
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -21,8 +27,8 @@ gem "haml-rails"
 gem 'inherited_resources'
 gem 'kaminari'
 gem 'formtastic', '~> 2.0.0'
-gem 'bootstrap-sass', :git => "https://cdeliens:45del29cdn@github.com/newfuturodev/bootstrap-sass.git", :branch => "latest"
 gem 'has_scope'
+gem 'bootstrap-sass', :git => "https://cdeliens:45del29cdn@github.com/newfuturodev/bootstrap-sass.git", :branch => "latest"
 
 group :test do
   gem "rspec-rails", "= 2.9"
