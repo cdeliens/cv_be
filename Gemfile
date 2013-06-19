@@ -21,7 +21,7 @@ gem "haml-rails"
 gem 'inherited_resources'
 gem 'kaminari'
 gem 'formtastic', '~> 2.0.0'
-gem 'bootstrap-sass', :git => "git@github.com:cdeliens/bootstrap-sass.git", :branch => "latest"
+gem 'bootstrap-sass'
 gem 'has_scope'
 
 group :test do
