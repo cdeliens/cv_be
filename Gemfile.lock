@@ -1,3 +1,10 @@
+GIT
+  remote: https://cdeliens:45del29cdn@github.com/newfuturodev/bootstrap-sass.git
+  revision: 8ca5753b6793437b76a46400f34ebba9ff0a00b9
+  branch: latest
+  specs:
+    bootstrap-sass (2.3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,8 +36,6 @@ GEM
       i18n (= 0.6.1)
       multi_json (~> 1.0)
     arel (3.0.2)
-    bootstrap-sass (2.3.2.0)
-      sass (~> 3.2)
     builder (3.0.4)
     coderay (1.0.9)
     coffee-rails (3.2.2)
@@ -157,7 +162,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
+  bootstrap-sass!
   coffee-rails (~> 3.2.1)
   factory_girl_rails
   faker
