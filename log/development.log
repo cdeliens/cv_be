@@ -21881,3 +21881,622 @@ Processing by PagesController#index as JSON
   Parameters: {"callback"=>"angular.callbacks._0"}
   [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
 Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 22:58:56 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:01:33 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+
+
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:01:33 -0600
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 56ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:01:40 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:01:40 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:03:04 -0600
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:03:04 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:03:16 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:03:16 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:03:16 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:03:16 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:03:27 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:03:27 -0600
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` 
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:03:45 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:03:45 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:03:56 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:03:56 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:03:58 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:03:58 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:04:04 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:04:04 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` 
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:04:04 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:04:04 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:04:15 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:04:15 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:04:20 -0600
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:04:20 -0600
+Processing by PagesController#show as JSON
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:04:22 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:04:22 -0600
+Processing by PagesController#index as JSON
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` 
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:05:11 -0600
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:05:11 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.1ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+  [1m[36mPage Load (0.1ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:05:20 -0600
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:05:20 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:06:07 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:06:07 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:11:49 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:11:49 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:12:10 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:12:10 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:14:23 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:14:23 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:18:24 -0600
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:18:24 -0600
+Processing by PagesController#index as JSON
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:19:38 -0600
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:19:38 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages.json" for 127.0.0.1 at 2013-07-02 23:25:54 -0600
+Processing by PagesController#index as JSON
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:28:43 -0600
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:28:43 -0600
+Processing by PagesController#show as JSON
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:28:51 -0600
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:28:51 -0600
+Processing by PagesController#index as JSON
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:28:54 -0600
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:28:54 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:30:28 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:30:28 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:30:29 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:30:29 -0600
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:30:47 -0600
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:30:47 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:30:52 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:30:52 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:31:03 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:31:03 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:31:11 -0600
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:31:11 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:31:14 -0600
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:31:14 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Processing by PagesController#show as JSON
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:31:16 -0600
+
+
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:31:16 -0600
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cms/pages" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Processing by Cms::PagesController#index as HTML
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1
+  Rendered cms/shared/_index.html.haml (38.4ms)
+  Rendered cms/pages/index.html.haml within layouts/cms (39.6ms)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 2.2ms)
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /cms.css - 304 Not Modified (0ms)
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+Served asset /select2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Compiled jquery.js  (1ms)  (pid 17631)
+Compiled jquery_ujs.js  (0ms)  (pid 17631)
+Compiled bootstrap.min.js  (20ms)  (pid 17631)
+Compiled select2.min.js  (0ms)  (pid 17631)
+Compiled redactor.js  (0ms)  (pid 17631)
+Compiled cms_behavior.js  (139ms)  (pid 16642)
+Served asset /cms_behavior.js - 304 Not Modified (147ms)
+Compiled cms_behavior.js  (131ms)  (pid 17631)
+Compiled cms.js  (189ms)  (pid 17631)
+Served asset /cms.js - 304 Not Modified (195ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/embarcaderomvb-reg-webfont.woff" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+
+
+Started GET "/assets/embarcaderomvb-bold-webfont.woff" for 127.0.0.1 at 2013-07-02 23:31:42 -0600
+Served asset /embarcaderomvb-reg-webfont.woff - 304 Not Modified (0ms)
+Served asset /embarcaderomvb-bold-webfont.woff - 304 Not Modified (0ms)
+
+
+Started DELETE "/cms/pages/5" for 127.0.0.1 at 2013-07-02 23:32:03 -0600
+Processing by Cms::PagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XhxJ3Gt5H5rfURTWms3/CzneJIx6T5XKrmKsiItQLNo=", "id"=>"5"}
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM `pages` WHERE `pages`.`id` = 5[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://cv-be.dev/cms/pages
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cms/pages" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+Processing by Cms::PagesController#index as HTML
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  Rendered cms/shared/_index.html.haml (4.7ms)
+  Rendered cms/pages/index.html.haml within layouts/cms (6.0ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+Served asset /cms.css - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+Served asset /select2.min.js - 304 Not Modified (0ms)
+Served asset /cms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-07-02 23:32:04 -0600
+Served asset /cms_behavior.js - 304 Not Modified (0ms)
+
+
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:33:08 -0600
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:33:08 -0600
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages` 
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 44ms (Views: 0.1ms | ActiveRecord: 2.8ms)
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pages.json?callback=angular.callbacks._0" for 127.0.0.1 at 2013-07-02 23:34:42 -0600
+
+
+Started GET "/pages/3.json?callback=angular.callbacks._1" for 127.0.0.1 at 2013-07-02 23:34:42 -0600
+Processing by PagesController#show as JSON
+  Parameters: {"callback"=>"angular.callbacks._1", "id"=>"3"}
+Processing by PagesController#index as JSON
+  Parameters: {"callback"=>"angular.callbacks._0"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  [1m[35mPage Load (0.1ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 12.0ms)
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 8.2ms)
