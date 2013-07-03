@@ -22500,3 +22500,61 @@ Processing by PagesController#index as JSON
   [1m[35mPage Load (0.1ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 3 LIMIT 1
 Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 12.0ms)
 Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/cms/pages" for 127.0.0.1 at 2013-07-02 23:36:53 -0600
+Processing by Cms::PagesController#index as HTML
+  [1m[35mPage Load (0.4ms)[0m  SELECT `pages`.* FROM `pages` 
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  Rendered cms/shared/_index.html.haml (37.2ms)
+  Rendered cms/pages/index.html.haml within layouts/cms (38.2ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 3.8ms)
+
+
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-07-02 23:36:54 -0600
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-07-02 23:36:54 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-02 23:36:54 -0600
+Compiled jquery_ujs.js  (0ms)  (pid 16642)
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-07-02 23:36:54 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-07-02 23:36:54 -0600
+Served asset /cms.js - 304 Not Modified (0ms)
+Compiled select2.css  (0ms)  (pid 17631)
+Compiled redactor.css  (0ms)  (pid 17631)
+Compiled cms.css  (1781ms)  (pid 17631)
+Served asset /cms.css - 304 Not Modified (1791ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-02 23:36:55 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-07-02 23:36:55 -0600
+Served asset /select2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-07-02 23:36:55 -0600
+Served asset /cms_behavior.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-07-02 23:36:55 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+
+
+Started GET "/assets/embarcaderomvb-reg-webfont.woff" for 127.0.0.1 at 2013-07-02 23:36:56 -0600
+Started GET "/assets/embarcaderomvb-bold-webfont.woff" for 127.0.0.1 at 2013-07-02 23:36:56 -0600
+Served asset /embarcaderomvb-bold-webfont.woff - 304 Not Modified (0ms)
+Served asset /embarcaderomvb-reg-webfont.woff - 304 Not Modified (0ms)
