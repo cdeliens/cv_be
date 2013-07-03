@@ -13,6 +13,7 @@ class Cms::BaseController < ApplicationController
     scope.search(controller.params[:q] || "")
   end
 
+
   def create
     create!(:notice => "#{@instance_name.humanize} succesfully created" ) {send("cms_#{@collection_name}_path")}
   end
