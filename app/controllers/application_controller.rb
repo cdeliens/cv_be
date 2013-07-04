@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  inherit_resources
   protect_from_forgery
   before_filter :require_http_auth_on_staging
   respond_to :json
