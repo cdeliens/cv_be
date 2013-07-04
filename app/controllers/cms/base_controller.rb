@@ -1,7 +1,7 @@
 class Cms::BaseController < ApplicationController
   respond_to :html, :json
   layout "cms"
-
+  before_filter :require_http_auth_on_staging
   before_filter :default_attributes 
   before_filter :sanitize_model_name
 
