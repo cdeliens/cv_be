@@ -19,9 +19,11 @@ end
 
 group :development do
   gem "pry"
+  gem "pry-remote"
   
 end
 
+gem 'twitter'
 gem 'jquery-rails'
 gem "haml-rails"
 gem 'inherited_resources'

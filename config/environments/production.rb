@@ -64,4 +64,9 @@ CvBe::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  TWITTER_CONSUMER_KEY = 'PgCKBOxfUnEa0f0W1Oi3tQ'
+  TWITTER_CONSUMER_SECRET = 'u8Cu09apHX2LQ4oKEvF0JT0KPzYfGmmHkPfizGisJM'
+
+  TC = Twitter::Client.new :consumer_key => TWITTER_CONSUMER_KEY, :consumer_secret => TWITTER_CONSUMER_SECRET
 end
