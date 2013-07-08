@@ -23,6 +23,7 @@ group :development do
   
 end
 
+gem 'instagram'
 gem 'twitter'
 gem 'jquery-rails'
 gem "haml-rails"

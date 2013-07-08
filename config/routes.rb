@@ -1,4 +1,7 @@
 CvBe::Application.routes.draw do
+  resources :instagram_services
+
+
   resources :twitter_services
 
 
