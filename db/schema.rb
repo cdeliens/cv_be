@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130619011905) do
+ActiveRecord::Schema.define(:version => 20130709221931) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -19,12 +19,36 @@ ActiveRecord::Schema.define(:version => 20130619011905) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "instagram_services", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "pages", :force => true do |t|
     t.string   "title"
     t.integer  "category_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
     t.text     "body"
+    t.boolean  "published"
+    t.datetime "published_date"
+    t.string   "published_date_humanize"
+  end
+
+  create_table "screams", :force => true do |t|
+    t.string   "body"
+    t.string   "owner"
+    t.string   "media_url"
+    t.string   "provider"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "tag"
+    t.string   "owner_media_url"
+  end
+
+  create_table "twitter_services", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

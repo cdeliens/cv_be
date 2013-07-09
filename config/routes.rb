@@ -1,7 +1,7 @@
 CvBe::Application.routes.draw do
+  
+  resources :screams
   resources :instagram_services
-
-
   resources :twitter_services
 
 
@@ -11,6 +11,7 @@ CvBe::Application.routes.draw do
     root to: "pages#index"
     resources :base
     resources :pages
+    resources :screams    
     resources :categories
   end
 end
