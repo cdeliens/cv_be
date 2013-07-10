@@ -2,7 +2,7 @@ class Scream < ActiveRecord::Base
   attr_accessible :body, :media_url, :owner, :provider, :owner_media_url, :tag
 
   def self.all_content_providers tag
-    (Scream.all + twitter_feed(tag) + instagram_feed(tag) + facebook_feed(tag)).shuffle
+    (Scream.all + twitter_feed(tag) + instagram_feed(tag)).shuffle
   end
 
   def self.instagram_feed tag
