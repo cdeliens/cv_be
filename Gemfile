@@ -23,6 +23,7 @@ group :development do
   
 end
 
+gem "koala", "~> 1.7.0rc1"
 gem 'instagram'
 gem 'twitter'
 gem 'jquery-rails'

@@ -2,7 +2,7 @@ class Scream < ActiveRecord::Base
   attr_accessible :body, :media_url, :owner, :provider, :owner_media_url, :tag
 
   def self.all_content_providers tag
-    (Scream.all + twitter_feed(tag) + instagram_feed(tag)).shuffle
+    (Scream.all + twitter_feed(tag) + instagram_feed(tag) + facebook_feed(tag)).shuffle
   end
 
   def self.instagram_feed tag
@@ -19,6 +19,16 @@ class Scream < ActiveRecord::Base
     screams = Array.new()
     results.each do |tweet|
       screams << Scream.new(body: tweet.text, owner: tweet.user.screen_name, media_url: "", provider: 'Twitter', tag: tag, owner_media_url: tweet.user.profile_image_url)
+    end
+    screams
+  end
+
+  def self.facebook_feed tag
+    @graph = Koala::Facebook::API.new()
+    results = @graph.search("##{tag}")
+    screams = Array.new()
+    results.each do |face|
+      screams << Scream.new(body: face["message"], owner: face["from"]["name"], provider: 'Facebook', tag: tag)
     end
     screams
   end
