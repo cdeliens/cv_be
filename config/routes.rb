@@ -19,6 +19,7 @@ CvBe::Application.routes.draw do
   namespace :cms do
     root to: "pages#index"
     resources :base
+    resources :posts
     resources :pages
     resources :screams    
     resources :categories
