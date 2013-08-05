@@ -11,6 +11,11 @@ CvBe::Application.routes.draw do
       get :find_by_category
     end
   end
+  resources :posts do
+    collection do
+      get :find_by_category
+    end
+  end
   namespace :cms do
     root to: "pages#index"
     resources :base
