@@ -23,7 +23,7 @@ class PostsController < InheritedResources::Base
 
   def find_by_category
     category = Category.find_by_name(params[:id].capitalize)
-    @results = Post.where(category_id: category.id).order("created_at DESC")
+    @results = Post.where(category_id: category.id).order("created_at ASC")
     respond_to do |format|
       if params[:callback]
         format.json { render :json => @results.to_json, :include => :category, :callback => params[:callback] }
