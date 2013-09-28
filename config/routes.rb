@@ -1,5 +1,8 @@
 CvBe::Application.routes.draw do
   
+  resources :tags
+
+
   resources :screams
   resources :instagram_services
   resources :twitter_services
@@ -21,6 +24,7 @@ CvBe::Application.routes.draw do
     resources :base
     resources :posts
     resources :pages
+    resources :tags
     resources :screams    
     resources :categories
   end
